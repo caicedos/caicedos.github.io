@@ -1,7 +1,7 @@
 console.log("HI!!")
 
 // function to display the authentication card
-function displayAuthentication(){
+
     var oktaSignIn = new OktaSignIn({
         baseUrl: "https://dev-110533.oktapreview.com Dashboard",
         clientId: "0oagjm1xfw09zGzsf0h7",
@@ -47,12 +47,4 @@ function displayAuthentication(){
           );
         });
       }
-}
-console.log(displayAuthentication());
-// on click event listener
-$("#sign-in-button").on("click", function(event){
-    event.preventDefault();
 
-    displayAuthentication();
-
-});
